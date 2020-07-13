@@ -2,7 +2,7 @@ package app.com;
 
 public class Calculator {
 
-	// Ok toujours toujours
+	// Ok toujours
 	public int add(int a, int b) {
 		
 		if (a > b)
