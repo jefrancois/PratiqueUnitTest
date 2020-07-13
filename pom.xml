@@ -3,4 +3,66 @@
   <groupId>UnitTestGithub</groupId>
   <artifactId>UnitTestGithub</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- Indiquer l'encodage et le projet en Java 11 -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+	</properties>
+
+	<!-- Déclaration de la dépendance vers JUnit -->
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.5.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm-all</artifactId>
+			<version>5.0.3</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- Pour être compatible avec JUnit 5, comment retirer les methodes non 
+		utilisé -->
+	<build>
+		<plugins>
+			<plugin>
+				<configuration>
+					<argLine>-noverify</argLine>
+				</configuration>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<profiles>
+		<profile>
+			<id>metrics</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>cobertura-maven-plugin</artifactId>
+						<version>2.5.1</version>
+
+						<configuration>
+							<formats>
+								<format>html</format>
+								<format>xml</format>
+							</formats>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
