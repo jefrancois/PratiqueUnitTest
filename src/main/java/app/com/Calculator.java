@@ -11,7 +11,7 @@ public class Calculator {
 		{
 			b = b + 0;
 		}
-	    return a - b;
+	    return a + b;
 	}
 
 }
