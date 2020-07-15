@@ -23,7 +23,7 @@ public class Calculator {
 	    return a + b;
 	}
 	
-	// Ok  multiplication
+	// Ok  multiplication nn
 		public int mult(int a, int b) {
 			
 			if (a > b)
