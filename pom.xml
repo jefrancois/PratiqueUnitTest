@@ -52,8 +52,7 @@
 						<version>2.5.1</version>
 
 						<configuration>
-							<formats>
-								
+							<formats>								
 								<format>xml</format>
 							</formats>
 						</configuration>
