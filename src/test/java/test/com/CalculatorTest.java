@@ -17,10 +17,10 @@ class CalculatorTest {
 		Calculator calculator = new Calculator();
 
 		// Act
-		if (a > b)
+		
 			somme = calculator.add(a, b);
-		else
-			somme = calculator.add(a, b);
+		
+			somme = calculator.add(b, a);
 			
 
 		// Assert
