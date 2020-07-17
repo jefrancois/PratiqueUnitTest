@@ -11,6 +11,7 @@ public class Calculator {
 			b = b + 0;
 		}
 	    return a + b;
+	    //Je suis un homme
 	}
 	
 	// Ok  mult
