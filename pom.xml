@@ -33,7 +33,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<configuration>
+			<configuration>
 					<argLine>-noverify</argLine>
 				</configuration>
 				<artifactId>maven-surefire-plugin</artifactId>
