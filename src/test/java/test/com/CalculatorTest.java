@@ -21,5 +21,20 @@ class CalculatorTest {
 		// Assert
 		assertEquals(5, somme);
 	}
+	
+	
+	@Test
+	void Division() {
+		// Arrange
+		int a = 2;
+		int b = 3;
+		Calculator calculator = new Calculator();
+
+		// Act
+		int somme = calculator.Div(a, b);
+
+		// Assert
+		assertEquals(5, somme);
+	}
 
 }
