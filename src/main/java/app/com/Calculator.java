@@ -2,7 +2,7 @@ package app.com;
 
 public class Calculator {
 
-	// Ok  
+	// meth. add  
 	public int add(int a, int b) {
 		
 		if (a > b)
