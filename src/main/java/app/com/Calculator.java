@@ -2,7 +2,6 @@ package app.com;
 
 public class Calculator {
 
-	// meth. add  
 	public int add(int a, int b) {
 		
 		if (a > b)
