@@ -20,7 +20,7 @@ class CalculatorTest {
 		
 			somme = calculator.add(a, b);
 		
-			somme = calculator.add(b, a);
+			//somme = calculator.add(b, a);
 			
 
 		// Assert hhh
