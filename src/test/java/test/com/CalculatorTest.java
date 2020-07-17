@@ -13,10 +13,15 @@ class CalculatorTest {
 		// Arrange
 		int a = 2;
 		int b = 3;
+		int somme;
 		Calculator calculator = new Calculator();
 
 		// Act
-		int somme = calculator.add(a, b);
+		if (a > b)
+			somme = calculator.add(a, b);
+		else
+			somme = calculator.add(a, b);
+			
 
 		// Assert
 		assertEquals(5, somme);

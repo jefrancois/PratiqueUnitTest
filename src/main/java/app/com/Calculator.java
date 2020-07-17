@@ -31,7 +31,9 @@ public class Calculator {
 				public int Div(int a, int b) {
 					
 					if (a > b)
-					{a = a + 0;}
+					{
+						a = a + 0;
+					}
 					else
 					{
 						b = b + 0;
