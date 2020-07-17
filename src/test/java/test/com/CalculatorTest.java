@@ -30,7 +30,7 @@ class CalculatorTest {
 	
 	@Test
 	void Division() {
-		// Arrange
+		// Arra
 		int a = 2;
 		int b = 3;
 		Calculator calculator = new Calculator();
